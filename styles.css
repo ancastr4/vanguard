@@ -3,19 +3,17 @@
 /* IMPORTED FONTS*/
 /* IMPORT "INTER" FROM GOOGLE FONTS*/
 
-.inter-<uniquifier> {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* CSS RESET */
 /* http://meyerweb.com/eric/tools/css/reset/
 v2.0 | 20110126
 License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
+html { 
+    font-family: Inter, sans-serif;
+}
+, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
