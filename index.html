@@ -11,6 +11,11 @@
     <title>Vanguard | Leading the Future of Success</title>
 <!-- ADD LINK TO YOUR CSS-->
  <link rel="stylesheet" href="styles.css">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+ 
 </head>
 
 <body>
@@ -19,9 +24,13 @@
 <nav>
 <h1>Vaanguard</h1>
         <h2>Main Navigation</h2>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle"><span></span></label>
+        <ul>
             <a href="#about">About</a>
             <a href="#services">Services</a>
-            <a hidden="#contact">Contact</a>
+            <a href="#contact">Contact</a>
+        </ul>
   </nav>          
 </header>            
 <main>
@@ -58,10 +67,10 @@
 
                 <h3>Profits</h3>
                 <table>
-                    <thead>
-                        <th>Year</th><th>Revenue ($M)</th><th>Growth (%)</th>
-                    </thead>
-                    <tbody>
+                         <tbody>
+                        <tr>
+                        <td>Year</td><td>Revenue ($M)</td><td>Growth (%)</td>
+                        </tr>
                         <tr>
                         <td>2020</td><td>$120M</td><td>30%</td>
                         </tr>               
@@ -111,7 +120,7 @@
 </main>
 <footer>
         For educational purposes only. 
-        Email: <a herf="#email">info@vaanguard.com</a>
+        Email: <a href="#email">info@vaanguard.com</a>
         Phone: 480.123.4567
 </footer>
 </body>
