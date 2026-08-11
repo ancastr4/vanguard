@@ -25,6 +25,20 @@ nav {
 
 label span html
 
+ {
+    content: "";
+
+    left:-.5rem;
+    width: 3.75rem;
+    height: 3.75rem;
+    background: url('images/vanguard-logo.svg') no-repeat center/contain;
+
+}
+
+h1 {
+ color:#007BFF;
+}
+
 body { 
     background-color: white;
 }
@@ -68,9 +82,7 @@ ul
  li,
 fieldset, form, label, legend,
 
-table {
-    background-color: black;
-}
+
  caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, , header, hgroup, 
@@ -79,6 +91,17 @@ time, mark, audio
 
 .innovation {
     color: white;
+
+{
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/vanguard-hero.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 1rem;
+    overflow: hidden;
+}
+
     button {
         color: white;
         background-color: #007BFF;
@@ -100,7 +123,19 @@ time, mark, audio
 }
 }
 
+table {
+    text-align: left;
+    color: white;
+    background-color: black;
+}
 
+td, th { 
+    padding: 15px 20px;
+}
+
+tr:nth-child(even) {
+    background-color: #333333;
+}
 
 .contact { 
     color: white;
