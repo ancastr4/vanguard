@@ -53,6 +53,28 @@ header{
       border-bottom: 1px solid(255, 255, 255, 0.1);
 }
 
+.innovation {
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/vanguard-hero.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+    button {
+        color: white;
+        background-color: #007BFF;
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        width: 50%;
+        cursor: pointer;
+    }
+
+
 .container  { 
 display: grid;
 grid-template-columns: auto auto auto;
@@ -64,6 +86,7 @@ background-color:white;
     color: white;
     border: 3px white solid; 
     padding: 20px;
+    border-radius: 5px;
     text-align: center;
 }
 
@@ -74,47 +97,24 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, 
-
-ul 
-
- li,
-fieldset, form, label, legend,
-
-
- caption, tbody, tfoot, thead, tr, th, td,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, , header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio 
 
-.innovation {
-    color: white;
-
-{
-    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/vanguard-hero.jpg') no-repeat center center/cover;
-    height: 80vh;
-    display: grid;
-    place-items: center;
-    text-align: center;
-    padding: 1rem;
-    overflow: hidden;
-}
-
-    button {
-        color: white;
-        background-color: #007BFF;
-    }
-}
 
 .expertise { 
     color: black;
     background-color: white;
+    padding: 15px;
+
 
 }
 
 .results {
+    padding: 15px;
     color: white;
     background-color: #007BFF;
     tr {
@@ -140,15 +140,31 @@ tr:nth-child(even) {
 .contact { 
     color: white;
     background-color: black;
+    margin: 0;
+    padding: 0;
+    input {
+        width: 100%;
+        border: 2px solid #007BFF;
+        padding: 5px;
+
+    }
     button{
         color: white;
         background-color: #007BFF;
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        width: 50%;
+        cursor: pointer;
     }
 }
 
 footer {
     color: white;
     background-color: black;
+    text-align: center;
+    padding: 15px;
+
 }
 
 video {
