@@ -15,7 +15,7 @@ License: none (public domain)
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Inter, sans-serif;
+
 }
 
 header{ 
@@ -35,15 +35,19 @@ nav {
 
 label span 
 
-html, body, 
+html, 
+body { 
+    font-family: 'Inter', sans-serif;
+    
+}
 
-.grid-container  { 
+.container  { 
 display: grid;
 grid-template-columns: auto auto auto;
 background-color:white;
 
 }
-.grid-container div { 
+.container div { 
     background-color:#007BFF;
     color: white;
     border: 3px white solid; 

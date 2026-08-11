@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
 <!-- ADD META TAG REQUIRED TO MAKE PAGE RESPONSIVE-->
- <meta name="viewport" content="width=width=device-width, initial-scale=1.0">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Vaanguard- Leading the Future of Success. Premier strategic investment and business acceleration firm for high-growth enterprises.">
     <meta name="keywords" content="business growth, strategic investment, mergers, corporate consulting, digital transformation">
 <!-- ADD META TAG FOR AUTHOR AND YOUR NAME-->
@@ -20,26 +20,29 @@
 <h1>Vanguard</h1>
         <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle"><span></span></label>
-        <ul>
+        
             <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#contact">Contact</a>
-        </ul>
+        
   </nav>          
 </header>            
-<main>
 <section> 
     <div class="innovation">
         <h2>Innovation & Investment</h2>
         <p>We empower businesses to lead the future with high-impact strategies, market intelligence, and financial solutions that drive success.</p>
-        <button>Request a Consultation</button>
+        <a href="#contact">Request a Consultation</a>
     </div>
+</section>
+    <section>
     <div class="expertise">
         <h2>Our Expertise. Your Edge.</h2>
         <p>We redefine success by leveraging AI-driven analytics, market intelligence, and high-yield investment strategies to propel businesses forward. Whether you're looking to scale, optimize, or dominate, our strategic expertise delivers results.'</p>
         <h2>What We Offer</h2>
     </div>
-  <div class="grid-container">
+    </section>
+    <section>
+  <div class="container">
             <div><h3>Strategic Growth Consulting</h3>
             <p>Unlock new revenue streams and optimize market expansion strategies.</p></div>
 
@@ -66,10 +69,14 @@
 
                 <h3>Profits</h3>
                 <table>
-                         <tbody>
+                    <thead>
                         <tr>
-                        <td>Year</td><td>Revenue ($M)</td><td>Growth (%)</td>
+                        <th>Year</th>
+                        <th>Revenue ($M)</th>
+                        <th>Growth (%)</th>
                         </tr>
+                        </thead>
+                    <tbody>
                         <tr>
                         <td>2020</td><td>$120M</td><td>30%</td>
                         </tr>               
@@ -101,29 +108,29 @@
         <h2>Contact Us</h2>
         <p>Want to take your business to the next level? Get in touch with our elite team today.</p>
 
-            <p>Full Name
-            <input type="text"> </p>
+          
+            <label for="name">Full Name</label>
+            <input type="text" id="name">
 
-            <p>Email Address
-            <input type="email"></p>
+            <label for="email">Email Address</label>
+            <input type="email" id="email">
 
-            <p>Company Name
-            <input type="text"></p>
+            <label for="company">Company Name</label>
+            <input type="text" id="company">
 
-            <p>Industry
-            <input type="text"></p>
+            <label for="industry">Industry</label>
+            <input type="text" id="industry">
 
-            <p>How can we help you?
-            <input type="text"></p>
+           <label for="message">How can we help you?</label>
+            <input type="text" id="message">
 
-            <button>Submit</button>
+            <button type="submit">Submit</button>
             </div>
 </section>
-</main>
 <footer>
-        For educational purposes only. 
-        Email: <a href="#email">info@vaanguard.com</a>
-        Phone: 480.123.4567
+        <p>For educational purposes only. </p>
+        <p>Email: <a href="#email">info@vaanguard.com</a></p>
+        <p>Phone: 480.123.4567</p>
 </footer>
 </body>
 </html>
