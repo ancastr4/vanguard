@@ -108,6 +108,10 @@ max-width: 300px;
     display: inline-block;
     }
 
+    button:hover {
+        background-color: #FF4500;
+    }
+
 .container  { 
 width: 90%;
 max-width: 1200px;
@@ -222,11 +226,6 @@ table {
 
 
 /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
-@media (max-width: 799px) {
-   .container {
-grid-template-columns: 1fr;
-   }
-}
 
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
 
@@ -257,7 +256,7 @@ grid-template-columns: 1fr;
     background: var(--charcoal);
     border-radius: 10px;
     position: relative;
-    transition: all;
+    transition all;
     height: 0;
 }
 /* THIS ONE IS DONE FOR YOU */
