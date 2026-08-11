@@ -41,11 +41,6 @@ label span html
 
 }
 
-h1 {
- color:#007BFF;
-}
-
-
 
 header{ 
       background-color: black;
@@ -55,6 +50,21 @@ header{
       top: 0;
       color:#007BFF;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+     
+}
+
+header h1 {
+ color:#007BFF;
+  background: url('images/vanguard-logo.svg');
+}
+
+nav a {
+    color: #007BFF;
+    text-decoration: none;
+    padding: 2px;
+    float: right;
+    padding-bottom: 2px;
+
 }
 
 .innovation {
@@ -68,15 +78,17 @@ header{
     overflow: hidden;
 }
 
-    button {
-        color: white;
-        background-color: #007BFF;
-        padding: 15px;
-        border: none;
-        border-radius: 5px;
-        width: 50%;
-        cursor: pointer;
+button {
+     color: white;
+    background-color: #007BFF;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
     }
+
 
 
 .container  { 
