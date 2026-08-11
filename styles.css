@@ -130,10 +130,9 @@ time, mark, audio
 
 .expertise { 
     color: black;
+      text-align: center;
     background-color: white;
-    padding: 15px;
-
-
+    margin-bottom: 1rem;
 }
 
 .results {
