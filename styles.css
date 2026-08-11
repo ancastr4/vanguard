@@ -76,7 +76,7 @@ content: "";
     left:-.5rem;
     width: 3.75rem;
     height: 3.75rem;
-    background: url('images/vanguard-logo.svg');
+    background: url('images/vanguard-logo.svg') no-repeat center/contain;
 }
 
 nav { 
