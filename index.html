@@ -109,23 +109,29 @@
         <h2>Contact Us</h2>
         <p>Want to take your business to the next level? Get in touch with our elite team today.</p>
 
-          
-            <label for="name">Full Name</label>
-            <input type="text" id="name">
-
-            <label for="email">Email Address</label>
-            <input type="email" id="email">
-
+            <form action="#" method="post">
+                <div class="contact-form">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" required>
+                </div>
+                <div class="contact-form">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" required>
+                </div>
+                <div class="contact-form">
             <label for="company">Company Name</label>
-            <input type="text" id="company">
-
+            <input type="text" id="company" required>
+                </div>
+            <div class="contact-form">
             <label for="industry">Industry</label>
-            <input type="text" id="industry">
-
+            <input type="text" id="industry" required>
+            </div>
+            <div class="contact-form">
            <label for="message">How can we help you?</label>
-            <input type="text" id="message">
-
+            <input type="text" id="message" required>
+            </div>
             <button type="submit">Submit</button>
+            </form>
             </div>
 </section>
 <footer>
@@ -133,5 +139,6 @@
         <p>Email: <a href="#email">info@vaanguard.com</a></p>
         <p>Phone: 480.123.4567</p>
 </footer>
+</main>
 </body>
 </html>
