@@ -256,7 +256,7 @@ table {
     background: var(--charcoal);
     border-radius: 10px;
     position: relative;
-    transition all;
+    transition: all;
     height: 0;
 }
 /* THIS ONE IS DONE FOR YOU */
