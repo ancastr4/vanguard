@@ -54,6 +54,9 @@ header{
       padding: 15px 20px;
       top: 0;
       color:#007BFF;
+      width: 90%;
+      max-width: 1200;
+      margin: 0 auto;
 }
 
 .header {
