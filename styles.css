@@ -68,12 +68,15 @@ header{
 
 header h1 {
  color:#007BFF;
+ position: relative;
+ padding-left: 4rem;
 }
 
 header h1::before{
 content: "";
+    position: absolute;
     display: inline-block;
-    left:-.5rem;
+    left: 0;
     width: 3.75rem;
     height: 3.75rem;
     background: url('images/vanguard-logo.svg') no-repeat center/contain;
