@@ -5,11 +5,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* ROOT VARIABLES */
+:root {
+    --blue: #007BFF;
+    --red: #FF4500;
+    --white: #EAEAEA;
+    --black: #000000;
+    --charcoal: #333333;
+    --font: "Inter", sans-serif;
+}
+
 /* CSS RESET */
 /* http://meyerweb.com/eric/tools/css/reset/
-v2.0 | 20110126
-License: none (public domain)
-*/
+v2.0 | 20110126 License: none (public domain)*/
 
 * {
     margin: 0;
@@ -24,23 +32,14 @@ body {
     min-width: 400px;
 }
 
+a { 
+    text-decoration: none;
+}
+
 nav { 
      background-color: black;
     color:#007BFF;
 }
-
-label span html
-
- {
-    content: "";
-
-    left:-.5rem;
-    width: 3.75rem;
-    height: 3.75rem;
-    background: url('images/vanguard-logo.svg') no-repeat center/contain;
-
-}
-
 
 header{ 
       background-color: black;
@@ -50,12 +49,22 @@ header{
       top: 0;
       color:#007BFF;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+      
      
 }
 
 header h1 {
  color:#007BFF;
-  background: url('images/vanguard-logo.svg');
+}
+
+header h1::before{
+content: "";
+    display: inline-block;
+    left:-.5rem;
+    width: 3.75rem;
+    height: 3.75rem;
+    background: url('images/vanguard-logo.svg') no-repeat center/contain;
 }
 
 nav a {
@@ -216,15 +225,6 @@ table {
     color: white;
 }
 
-/* ROOT VARIABLES */
-:root {
-    --blue: #007BFF;
-    --red: #FF4500;
-    --white: #EAEAEA;
-    --black: #000000;
-    --charcoal: #333333;
-    --font: "Inter", sans-serif;
-}
 
 /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
 
@@ -314,14 +314,14 @@ footer {
 
 /* MEDIA QUERIES (MEDIUM) */ 
 @media (min-width: 800px) {
-    #results {
+    .results {
         grid-template-columns: 1fr 1fr;
     }
-    .results-container {
+    .results {
         flex-direction: row;
         justify-content: space-between;
     }
-    .results-table {
+    table {
         width: 50%;
     }
     .bar-chart {
@@ -332,3 +332,7 @@ footer {
 
 /* MEDIA QUERIES (LARGE) */
 @media (min-width: 1024px)
+
+.container div {
+    grid-template-columns: repeat(3,fr);
+}
