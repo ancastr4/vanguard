@@ -32,19 +32,6 @@ body {
     min-width: 400px;
 }
 
-nav { 
-     background-color: black;
-    color:#007BFF;
-}
-
-nav a {
-    color: #007BFF;
-    text-decoration: none;
-    padding: 2px;
-    float: right;
-    padding-bottom: 2px;
-}
-
 header{ 
       background-color: black;
       display: flex;
@@ -63,6 +50,9 @@ header{
     flex-direction: column;
     gap: 10px;
     padding: 10px 0;
+    width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
 }
 
 header h1 {
@@ -78,7 +68,18 @@ content: "";
     background: url('images/vanguard-logo.svg') no-repeat center/contain;
 }
 
+nav { 
+     background-color: black;
+    color:#007BFF;
+}
 
+nav a {
+    color: #007BFF;
+    text-decoration: none;
+    padding: 2px;
+    float: right;
+    padding-bottom: 2px;
+}
 
 .innovation {
     width: 90%;
@@ -112,9 +113,9 @@ width: 90%;
 max-width: 1200px;
 margin: 0 auto;
 display: grid;
-grid-template-columns: auto auto auto;
+grid-template-columns: 1fr;
 background-color:white;
-padding: 10px 0;
+padding: 20px 0;
 
 }
 .container div { 
@@ -132,8 +133,9 @@ ol, ul {
 
 .expertise { 
     color: black;
-      text-align: center;
+    text-align: center;
     background-color: white;
+    padding: 30px 0;
     margin-bottom: 1rem;
     width: 90%;
     max-width: 1200px;
@@ -147,17 +149,17 @@ ol, ul {
     padding: 15px;
     color: white;
     background-color: #007BFF;
-    tr {
-    background-color: #000000;
-    }
 }
 
 table {
     text-align: left;
     color: white;
     background-color: black;
-    
 }
+
+tr {
+        background-color: #000000;
+    }
 
 td, th { 
     padding: 15px 20px;
@@ -175,12 +177,13 @@ tr:nth-child(even) {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    input {
+}
+
+input {
         width: 100%;
         border: 2px solid #007BFF;
         padding: 5px;
     } 
-}
 
 
 
@@ -219,7 +222,11 @@ table {
 
 
 /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
-
+@media (max-width: 799px) {
+   .container {
+grid-template-columns: 1fr;
+   }
+}
 
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
 
@@ -231,27 +238,6 @@ table {
     margin: 0 auto;
 }
 
-/* ADD TO "INNOVATION & INVESTMENT SECTION (Photo by Kevin Matos on Unsplash) */
- {
-    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/vanguard-hero.jpg') no-repeat center center/cover;
-    height: 80vh;
-    display: grid;
-    place-items: center;
-    text-align: center;
-    padding: 1rem;
-    overflow: hidden;
-}
-
-/* ADD FLOATING SVG LOGO BEFORE THE H1 */
- {
-    content: "";
-
-    left:-.5rem;
-    width: 3.75rem;
-    height: 3.75rem;
-    background: url('images/vanguard-logo.svg') no-repeat center/contain;
-
-}
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
     display: grid;
@@ -271,7 +257,7 @@ table {
     background: var(--charcoal);
     border-radius: 10px;
     position: relative;
-    transition: ;
+    transition: all;
     height: 0;
 }
 /* THIS ONE IS DONE FOR YOU */
@@ -298,25 +284,26 @@ table {
     animation: stepUp 1s ease-in-out forwards;
 }
 
-
 footer {
     color: white;
     background-color: black;
     text-align: center;
     width: 90%;
-max-width: 1200px;
-margin: 0 auto;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 
 /* MEDIA QUERIES (MEDIUM) */ 
 @media (min-width: 800px) {
-    .results {
-        grid-template-columns: 1fr 1fr;
+    .container {
+        grid-template-columns: auto auto;
     }
     .results {
+        grid-template-columns: 1fr 1fr;
         flex-direction: row;
         justify-content: space-between;
+        align-items: flex-start;
     }
     table {
         width: 50%;
@@ -328,8 +315,9 @@ margin: 0 auto;
 
 
 /* MEDIA QUERIES (LARGE) */
-@media (min-width: 1024px)
+@media (min-width: 1024px){
 
-.container div {
-    grid-template-columns: repeat(3,fr);
+.container{
+    grid-template-columns: auto auto auto;
+}
 }
