@@ -32,6 +32,21 @@ body {
     min-width: 400px;
 }
 
+h1, nav, h2, h3, button, p, .contact {    
+    animation: fade 3s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
 header{ 
       background-color: black;
       display: flex;
@@ -39,10 +54,6 @@ header{
       padding: 15px 20px;
       top: 0;
       color:#007BFF;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);  
-      width: 90%;
-      max-width: 1200px;
-      margin: 0 auto;
 }
 
 .header {
@@ -50,9 +61,6 @@ header{
     flex-direction: column;
     gap: 10px;
     padding: 10px 0;
-    width: 90%;
-      max-width: 1200px;
-      margin: 0 auto;
 }
 
 header h1 {
@@ -65,7 +73,7 @@ content: "";
     left:-.5rem;
     width: 3.75rem;
     height: 3.75rem;
-    background: url('images/vanguard-logo.svg') no-repeat center/contain;
+    background: url('images/vanguard-logo.svg');
 }
 
 nav { 
@@ -82,9 +90,7 @@ nav a {
 }
 
 .innovation {
-    width: 90%;
     max-width: 1200px;
-    margin: 0 auto;
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/vanguard-hero.jpg') no-repeat center center/cover;
     height: 80vh;
     display: grid;
@@ -108,20 +114,17 @@ max-width: 300px;
     display: inline-block;
     }
 
-    button:hover {
-        background-color: #FF4500;
-    }
+button:hover {
+    background-color: #FF4500;
+}
 
 .container  { 
-width: 90%;
-max-width: 1200px;
-margin: 0 auto;
 display: grid;
 grid-template-columns: 1fr;
 background-color:white;
 padding: 20px 0;
-
 }
+
 .container div { 
     background-color:#007BFF;
     color: white;
@@ -141,15 +144,9 @@ ol, ul {
     background-color: white;
     padding: 30px 0;
     margin-bottom: 1rem;
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .results {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
     padding: 15px;
     color: white;
     background-color: #007BFF;
@@ -162,8 +159,8 @@ table {
 }
 
 tr {
-        background-color: #000000;
-    }
+    background-color: #000000;
+}
 
 td, th { 
     padding: 15px 20px;
@@ -178,9 +175,6 @@ tr:nth-child(even) {
     background-color: black;
     margin: 0;
     padding: 0;
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 input {
@@ -188,8 +182,6 @@ input {
         border: 2px solid #007BFF;
         padding: 5px;
     } 
-
-
 
 video {
     margin: 0;
@@ -199,6 +191,7 @@ video {
     font: inherit;
     vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -224,18 +217,10 @@ table {
     color: white;
 }
 
-
 /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
 
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
 
-
-/* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
@@ -279,6 +264,8 @@ table {
     }
 }
 /* ADD ANIMATION ON stepUp for 1s ease-in-out forwards */
+
+
 .bar {
     animation: stepUp 1s ease-in-out forwards;
 }
@@ -287,9 +274,6 @@ footer {
     color: white;
     background-color: black;
     text-align: center;
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 
@@ -315,7 +299,6 @@ footer {
 
 /* MEDIA QUERIES (LARGE) */
 @media (min-width: 1024px){
-
 .container{
     grid-template-columns: auto auto auto;
 }
